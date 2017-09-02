@@ -1,0 +1,24 @@
+border-top-1px($color,$solid=solid)
+  position:relative
+  &:before
+    display :block
+    position:relative
+    left:0
+    bottom: 0
+    width:100%
+    border-bottom:1px $solid $color
+    content:''
+border-bottom-1px($color,$solid=solid)
+  position:relative
+  &:after
+    display :block
+    position:relative
+    left:0
+    bottom: 0
+    width:100%
+    border-top:1px $solid $color
+    content:''
+bg-image($url)
+  background :url($url+"@2x.png")
+  @media(-webkit-min-device-pixel-ratio:3),(min-device-pixel-radio:3)
+    background-image :url($url+"@3x.png")

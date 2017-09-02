@@ -1,0 +1,81 @@
+.myfile
+  .tbl
+    display flex
+    .tbl-item
+      flex 1
+      height 40px
+      width 100%
+      text-align center
+      margin 10px 0
+      border-bottom 2px white solid
+      & > a
+        display: block /*超链接自动充满格子*/
+        text-decoration: none
+        font-size: 14px
+        color: rgb(77, 85, 93)
+        line-height 40px
+        width 100%
+        &.active
+          width 100%
+          border-bottom red 2px solid
+/*          color: white
+          background-color #a70000*/
+
+  .file_li
+    width: 100%
+    margin: 0 auto 2px
+    position: relative
+    border-bottom: 1px dashed rgb(211, 211, 211)
+    .file_all
+      margin 5px 0
+      text-align center
+      .file-sin
+        display inline-block
+        height 40px
+        .short-tip
+          font-size 12px
+        .short-state
+          border-radius 8px
+        .fstate0
+          color rgba(7,17,27,0.4)
+          border 1px solid rgba(7,17,27,0.4)
+        .fstate3
+          border 1px solid #21d323
+          color #21d323
+        .fstate1
+          border 1px solid #ee2227
+          color red
+        .fstate2
+          border 1px solid #ecd112
+          color #ecd112
+      .file-from
+        width 20%
+        line-height 20px
+        font-size 14px
+        height 40px
+        overflow hidden
+      .file-title
+        width 56%
+        line-height 20px
+        vertical-align top
+        font-size 16px
+      .file-time
+        width 16%
+        line-height 20px
+        vertical-align top
+        font-size 12px
+      .file-part
+        font-size 12px
+        display inline-block
+        margin 10px 4px 0
+        padding 1px 2px
+        border-radius 6px
+      .goodstate
+        color #25b427
+        border 1px solid #25b427
+      .zerostate
+        color #949494
+        border 1px solid #949494
+      .badstate
+        color #b72f2f
+        border 1px solid #b72f2f
